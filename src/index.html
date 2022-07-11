@@ -11,112 +11,132 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <h1>HTML Form</h1>
     <script type="text/javascript" src="./main.js"></script>
-    <form 
-    action="https://mate-academy-form-lesson.herokuapp.com/create-application" 
+    <form
+    action="https://mate-academy-form-lesson.herokuapp.com/create-application" method="get"
     class="personal_info form">
-     <label for="" class="name_block">
-      Personal information
-    </label> 
-     <br><br>
-  <label for="surname" class="label">
+      <label class="name_block">
+        <legend>Personal information</legend>
+      </label><br><br>
+
+      <label class="label">
     Surname:
-  </label> 
-  <input type="text" name="surname" id="surname"><br><br>
-  
-  <label for="name" class="label">
+        <input type="text" name="surname"
+        id="surname">
+      </label><br><br>
+
+
+      <label class="label">
     Name:
-  </label> 
-  <input type="text" name="name" id="name"><br><br>
+        <input type="text" name="name"
+        id="name">
+      </label><br><br>
 
-  <label for="age" class="label">
+
+      <label class="label">
     How old are you?
-  </label>
-   <input type="number" name="age" id="age" min="1" max="100" value="12"><br><br>
+        <input type="number" name="age"
+        id="age"
+        min="1" max="100"
+        value="12">
+      </label><br><br>
 
-  <label for="birt" class="label">
+
+      <label class="label">
     Full date of birth:
-  </label> 
-  <input type="date" name="birth" id="birt" ><br><br>
-  <label for="accept" class="label">
-    I accept the term of the agreement
-   </label>
-  <input type="checkbox" name="accept" id="accept">
-  </form><br><br>
+        <input type="date" name="birth"
+        id="birt" >
+      </label><br><br>
 
-  <form 
-  action="https://mate-academy-form-lesson.herokuapp.com/create-application" 
+      <label class="label">
+    I accept the term of the agreement
+        <input type="checkbox" name="accept"
+        id="accept">
+      </label>
+
+    </form><br><br>
+
+    <form
+  action="https://mate-academy-form-lesson.herokuapp.com/create-application"
   class="registration form">Registration <br><br>
-  <label for="email" class="label">
+      <label class="label">
     Email:
-  </label> 
-  <input type="email" name="email"
+        <input type="email" name="email"
    id="email"
     placeholder="email@example.com"
   >
-  <br><br>
-
-  <label for="password" class="label">
+      </label>
+      <br><br>
+      <label for="password" class="label">
     Password:
-  </label> <input type="password" name="password" id="password"><br><br>
-  </form>
-  <br><br>
+        <input type="password" name="password"
+         id="password"><br><br>
+      </label>
+    </form>
+    <br><br>
 
-  <form 
+    <form
   action="https://mate-academy-form-lesson.herokuapp.com/create-application"
    class="interesting form">
-    An interesting fact about you! 
+    An interesting fact about you!
 
-    <label for="yes no" class="label">
-      Do you love cats? 
-    </label>
-    <input type="radio" name="yes" id="yes">Yes
-    <input type="radio" name="no" id="no">No 
-    <br><br>
-    <label for="color" class="label">
-      What is your favorite color? 
-    </label>
-    <input type="color" name="color" id="color">
-    <br><br>
+      <label class="label">
+      Do you love cats?
+        <input type="radio" name="yes"
+         id="yes">Yes
+        <input type="radio" name="no"
+        id="no">No
+      </label>
+      <br><br>
+      <label class="label">
+      What is your favorite color?
+        <input type="color" name="color"
+        id="color">
+      </label>
+      <br><br>
 
-    <label for="cars" class="label">
-      What are your favorite brand of cars?
-    </label>
-    <textarea name="cars" id="cars" cols="30" rows="10">
-
-    </textarea>
-    <br><br>
-    <label for="rate" class="label">
+      <label class="cars-label">
+        What are your favorite brand of cars?
+        <select name="cars" multiple>
+          <option value="BMW">BMW</option>
+          <option value="Audi">Audi</option>
+          <option value="Lada">Lada</option>
+        </select>
+      </label>
+      <br><br>
+      <label for="rate" class="label">
       How do you rate our work?
-    </label> 
-    <input type="range" name="rate" id="rate"><br><br>
-  </form><br><br>
-  <form 
-  action="https://mate-academy-form-lesson.herokuapp.com/create-application" 
+        <input type="range" name="rate"
+        id="rate">
+      </label>
+      <br><br>
+    </form><br><br>
+    <form
+  action="https://mate-academy-form-lesson.herokuapp.com/create-application"
   class="additional form">
-  Additional info 
-  <br><br>
-  <label for="comment" class="label">
+  Additional info
+      <br><br>
+      <label class="label">
     Comments:
-  </label> 
-  <textarea 
-  name="comment" 
-  id="comment" 
-  cols="40" 
-  rows="3">
-</textarea>
-<br><br>
-  <label class="label">
-    Would you recommend us?
-  </label> 
-  <select name="select">
-    <option value="value1" selected>Yes</option>
-    <option value="value2">No</option>
-    <option value="value3">Maybe</option>
-  </select>
-  </form><br><br>
+        <textarea
+    name="comment"
+    id="comment"
+    cols="40"
+    rows="3">
+        </textarea>
+      </label>
 
-  <button type="submit">Submit</button>
+      <br><br>
+      <label class="label">
+    Would you recommend us?
+        <select name="select">
+          <option value="value1" selected>Yes</option>
+          <option value="value2">No</option>
+          <option value="value3">Maybe</option>
+        </select>
+      </label>
+    </form><br><br>
+
+    <button type="submit">Submit</button>
   </body>
 </html>
